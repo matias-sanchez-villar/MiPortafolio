@@ -1,0 +1,23 @@
+.presentacion{
+    padding-top: 3.5rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: #1d1919c5;
+    font: italic bold Georgia, Serif;
+    text-shadow: 1.5px 1.7px 0 #291f1f42;
+}
+
+.primera-seccion{
+    width: 100%;
+    height: 75rem;
+    background: black;
+    display: flex;
+}
+
+.primera-seccion__titulo{
+    color: blanchedalmond;
+}
