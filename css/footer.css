@@ -21,14 +21,14 @@
     margin: 0.4rem;
 }
 
-.fa-linkedin{
+.footer-fa-linkedin{
     color: #2538A2;
     font-size: 3rem;
     background: #fdfdfd;
     border-radius: 6px;
 }
 
-.fa-github{
+.icon-footer__git i{
     color: #FFFFFF;
     font-size: 3rem;
     background: #0f0f0f;
