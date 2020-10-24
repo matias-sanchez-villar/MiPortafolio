@@ -1,105 +1,49 @@
-.presentacion-caja{
-    padding-top: 3.5rem;
+body{
+    margin: 0;
+}
+
+.educacion{
+    padding-top: 0.1em;
+    background: tomato;
 }
 
 
-.presentacion__h1{
-    font-size: 3rem;
+.educacion__Universitaria, .educacion__Cursos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: tomato;
+}
+
+
+.educacion__separados{
+    margin: 1rem;
+    flex: 1 1 auto;
+}
+
+/*tectos de educacion*/
+.educacion__h2{
     text-align: center;
-    letter-spacing: 0.5rem;
-    color: #1d1919c5;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #1d0e0ed7;
     font: italic bold Georgia, Serif;
-    text-shadow: 1.5px 1.7px 0 #291f1f42;
     line-height: 1.3em;
 }
 
-.presentacion{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.presentacion__p{
-    font-size: 1.2em;
+.educacion__separados h3{
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    color: #000000;
+    line-height: 1.3em;
     text-align: center;
-    letter-spacing: 1.1px;
-    line-height: 1.2em;
-    flex: 2 1 auto;
-    margin: 0;
-    margin-left: 5rem;
 }
 
-.presentacion__img{
-    border-radius: 100%;
-    width: 14rem;
-    flex: 1 1 auto;
-    margin-left: 10rem;
-    margin-top: -3.5rem;
-    margin-right: 3rem;
-}
-
-.presentacion-icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.icon-presentacion__linkedin, .icon-presentacion__git{
-    margin: 1rem;
-    margin-top: -0.3rem;
-}
-
-.fa-linkedin{
-    margin-left: 2rem;
-    color: #2538A2;
-    font-size: 2.2rem;
-    border-radius: 6px;
-}
-
-.fa-github{
-    color: black;
-    font-size: 2.2rem;
-    border-radius: 100%;
-}
-
-@media only screen and (max-width: 1072px) {    
-    .presentacion__p{
-        margin-left: 3rem;
-    }
-
-    .presentacion__img{
-        margin-top: -1rem;
-        margin: 0 2.2rem;
-    }
-    
-    .presentacion-icon{
-        justify-content: center;
-        margin-left: -15rem;
-    }
-
-    .icon-presentacion__linkedin, .icon-presentacion__git{
-        margin: 1rem;
-        margin-top: 1rem;
-    }
-}
-
-@media only screen and (max-width: 642px) {   
-    .presentacion{
-        flex-direction: column;
-    }
-
-    .presentacion__p{
-        margin: 0 0.3rem;
-    }
-    
-    .presentacion__img{
-        margin-top: 0rem;
-        margin: 0rem;
-    }
-
-    .presentacion-icon{
-        justify-content: center;
-        margin-left: 0rem;
-    }
+.educacion__P{
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    color: #25011c;
+    line-height: 1em;
 }
