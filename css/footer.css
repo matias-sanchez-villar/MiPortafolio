@@ -51,8 +51,7 @@
     font-size: 1em;
     letter-spacing: 0.1rem;
     text-align: center;
-    margin: 0.8rem;
-    letter-spacing: 0.1rem;
+    margin: 0.9rem;
 }
 
 .descripcion-footer__H3{
@@ -61,8 +60,15 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .navigation-footer, .descripcion-footer{
+    .navigation-footer, .descripcion-footer__p{
         display: none;
     }
+    .icon-footer{
+        display: flex;
+        flex-direction: row;
+    }
 
+    .icon-footer__linkedin, .icon-footer__git {
+        margin: 1.3rem;
+    }
 }
