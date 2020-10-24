@@ -4,7 +4,7 @@ body{
 
 .educacion{
     padding-top: 0.1em;
-    background: tomato;
+    background: rgb(200, 196, 196);
 }
 
 
@@ -13,7 +13,7 @@ body{
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    background: tomato;
+    background: rgb(200, 196, 196);
 }
 
 
@@ -27,7 +27,7 @@ body{
     text-align: center;
     font-size: 2rem;
     letter-spacing: 0.2rem;
-    color: #1d0e0ed7;
+    color: #250404d7;
     font: italic bold Georgia, Serif;
     line-height: 1.3em;
 }
