@@ -115,7 +115,12 @@
 .educacion{
     padding-top: 0.1em;
     background: rgb(200, 196, 196);
-    border-radius: 20px;
+    -webkit-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+    box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
@@ -124,14 +129,16 @@
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    background: rgb(200, 196, 196);
-    border-radius: 20px;
 }
 
 
 .educacion__separados{
     margin: 1rem;
     flex: 1 1 auto;
+    -webkit-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+    box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+    border-radius: 100px;
 }
 
 /*tectos de educacion*/
@@ -139,7 +146,7 @@
     text-align: center;
     font-size: 2.5em;
     letter-spacing: 0.2rem;
-    color: #250404d7;
+    color: #000000d7;
     font: italic bold Georgia, Serif;
     line-height: 1.3em;
     font-weight: 900;
