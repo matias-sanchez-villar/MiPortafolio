@@ -1,3 +1,6 @@
+body{
+    background: #B0BFE1;
+}
 
 .presentacion-caja{
     padding-top: 3.5rem;
@@ -8,9 +11,9 @@
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.5rem;
-    color: #1d1919c5;
+    color: #ffffff;
     font: italic bold Georgia, Serif;
-    text-shadow: 1.5px 1.7px 0 #291f1f42;
+    text-shadow: 1.4px 1.7px 0 #00000042;
     line-height: 1.3em;
 }
 
@@ -55,12 +58,15 @@
     margin-left: 2rem;
     color: #2538A2;
     font-size: 2.2rem;
+    background: #fdfdfd;
+    border-radius: 6px;
 }
 
 .icon-presentacion__git i{
     color: black;
     font-size: 2.2rem;
     background: #ffffff;
+    border-radius: 100%;
 }
 
 @media only screen and (max-width: 1072px) {    
@@ -94,31 +100,49 @@
     }
     
     .presentacion__img{
-        margin-top: 0rem;
-        margin: 0rem;
+        margin: 0;
+        margin-top: 1rem;
     }
 
     .presentacion-icon{
-        justify-content: center;
-        margin-left: 0rem;
+        justify-content: space-between;
+        margin-left: 0.2rem;
+        margin-top: 2rem;
     }
 }
 
-/* contacto*/
-.contacto{
-    height: 400px;
-    background: black;
+@media only screen and (max-width: 641px) {   
+    .presentacion-icon{
+        justify-content: space-between;
+        margin-left: 0rem;
+        margin-top: -3rem;
+    }
+
+    .icon-presentacion__linkedin, .icon-presentacion__git{
+        margin: 0;
+        margin-left: 0;
+    }
+
+    .icon-presentacion__git{
+        margin-right: 2rem;
+    }
 }
 
+@media only screen and (max-width: 351px) {   
+    .presentacion-icon{
+        justify-content: space-around;
+        margin:1rem;
+    }
+    .icon-presentacion__linkedin, .icon-presentacion__git{
+        margin: 0;
+        margin-left: -2rem;
+    }
+}
 
 /*estudios*/
 
 .educacion{
     padding-top: 0.1em;
-    background: rgb(200, 196, 196);
-    -webkit-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
-    box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -135,49 +159,35 @@
 .educacion__separados{
     margin: 1rem;
     flex: 1 1 auto;
-    -webkit-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
-    box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+    /*falta los colores de fondo*/
     border-radius: 100px;
     width: 30rem;
 }
 
 /*tectos de educacion*/
-.educacion__h2{
-    text-align: center;
-    font-size: 2.5em;
-    letter-spacing: 0.2rem;
-    color: #000000d7;
-    font: italic bold Georgia, Serif;
-    line-height: 1.3em;
-    font-weight: 900;
-    text-shadow: white 3px 2px 4px;
-}
 
 .educacion__separados h3{
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
-    color: #f8f6f6;
+    color: #000000;
     line-height: 1.3em;
     text-align: center;
     font-weight: 900;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: #d5d7dd 2.4px 2.4px 2px;
 }
 
 .educacion__P{
     text-align: center;
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
-    color: #fbf2f7;
+    color: #ffffff;
     line-height: 1em;
-    font-weight: 500;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 600;
+    text-shadow: black 1.4px 1.4px 1.4px;
 }
 
 .educacion__separados:hover{
-    -webkit-box-shadow: inset 20px 17px 123px 39px rgba(36, 35, 35, 0.75);
-    -moz-box-shadow: inset 20px 17px 123px 39px rgba(36, 35, 35, 0.75);
-    box-shadow: inset 20px 17px 123px 39px rgba(36, 35, 35, 0.75);
+    background: #8f9ab460;
     transition: all 0.2s linear;
 }
 
@@ -187,24 +197,22 @@
         border-radius: 20px;
     }
     .educacion__separados:hover{
-        -webkit-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
-        -moz-box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
-        box-shadow: inset 20px 17px 123px 39px rgba(0,0,0,0.75);
+        background: #B0BFE1;
         transition: all 0.3s linear;
     }
 }
 
 /* habilidades */
 
-.educacion__h2{
+.habilidades__h2, .educacion__h2{
     text-align: center;
     font-size: 2.5em;
     letter-spacing: 0.2rem;
-    color: #000000d7;
+    color: #202941;
     font: italic bold Georgia, Serif;
     line-height: 1.3em;
     font-weight: 900;
-    text-shadow: white 3px 2px 4px;
+    text-shadow: #cdd0d3 2px 2px 2px;
     margin: 1rem;
 }
 
