@@ -3,17 +3,32 @@ body{
 }
 
 .presentacion-caja{
-    padding-top: 3.5rem;
+    padding-top: 3.1rem;
 }
 
+h1{
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 .presentacion__h1{
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.5rem;
     color: #ffffff;
-    font: italic bold Georgia, Serif;
-    text-shadow: 1.4px 1.7px 0 #00000042;
+    text-shadow: 1px 1px 1px black,
+                 2px 2px 2px black,
+                 3px 3px 3px black,
+                 4px 4px 4px black,
+                 5px 5px 5px black,
+                 6px 6px 6px black;
     line-height: 1.3em;
 }
 
@@ -167,23 +182,25 @@ body{
 /*tectos de educacion*/
 
 .educacion__separados h3{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     letter-spacing: 0.1rem;
     color: #000000;
     line-height: 1.3em;
     text-align: center;
-    font-weight: 900;
-    text-shadow: #d5d7dd 2.4px 2.4px 2px;
+    font-weight: 600;
 }
 
 .educacion__P{
     text-align: center;
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
-    color: #ffffff;
+    color: #f5efefef;
     line-height: 1em;
     font-weight: 600;
     text-shadow: 1px 1px 1px black,
+                 2px 2px 2px black,
+                 2px 2px 2px black,
+                 2px 2px 2px black,
                  2px 2px 2px black;
 }
 
@@ -209,13 +226,9 @@ body{
     text-align: center;
     font-size: 2.5em;
     letter-spacing: 0.2rem;
-    color: #202941;
-    font: italic bold Georgia, Serif;
+    color: rgb(0, 0, 0);
     line-height: 1.3em;
     font-weight: 900;
-    text-shadow: 1px 1px 1px rgb(14, 14, 14),
-                 2px 2px 2px rgb(98, 97, 97),
-                 3px 3px 3px rgb(98, 97, 97);
     margin: 1rem;
 }
 
