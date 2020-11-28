@@ -256,3 +256,65 @@ p, a{
 .educacion:target, .Habilidades:target, .contacto:target{
     padding-top: 3.5rem;
 }
+
+/* contaco */
+
+.contacto{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+}
+
+form{
+    padding: 1.5em;
+}
+
+fieldset{
+    padding: 1.5em 2.5em;
+    border: 2px solid;
+    border-radius: 9px;
+    font-size: 1.1em;
+    font-weight: 900;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+}
+
+fieldset div{
+    text-align: center;
+}
+
+input{
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.estilotextarea{
+    width:288px;
+    height:130px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.boton{
+    margin: 7px;
+    margin-right: 0;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: .25rem;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color .15s ease-in-out;
+}
+      
+.boton:hover, .boton:focus {
+    background-color: #0069d9;
+}
+      
+.boton:active {
+    background-color: #0062cc;
+}

@@ -98,7 +98,32 @@
         <main>
             <section class="contacto" id="contacto">
                 <article>
+                    <form action="contacto.php" method="post">
+                        <fieldset>
+                            <legend>Contacto</legend>
+                                <div>
+                                    <p><label>Nombre: <input type="text" name="nombre" placeholder="Nombre" required></label></p>
+                                </div>
+                                <div>
+                                    <p><label>Apellido: <input type="text" name="apellido" placeholder="Apellido" required></label></p>
+                                </div>
+                                <div>
+                                    <p><label>Correo: <input type="email" name="correo" placeholder="Correo" required></label></p>
+                                </div>
+                                <div>
+                                    <p><label>Asunto: <input type="text" name="asunto" placeholder="Asunto" required></label></p>
+                                </div>
+                                <div>
+                                    <p>Mensaje</p>
+                                    <textarea name="texto" placeholder="Escriba su mensaje" required class=estilotextarea></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Enviar" class="boton" />
+                                    <input type="reset" value="Borrar" name="Restablecer" class="boton"/>
+                                </div>
+                        </fieldset>
 
+                    </form>
                 </article>
             </section>
         </main>
