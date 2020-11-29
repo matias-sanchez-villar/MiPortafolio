@@ -318,3 +318,33 @@ input{
 .boton:active {
     background-color: #0062cc;
 }
+
+@media only screen and (max-width: 443px) {   
+    form{
+        padding: 0.2em;
+        margin-bottom: 1em;
+    }
+    
+    fieldset{
+        padding: 0.5em 1.5em;
+        border: 1px solid;
+        font-size: 0.5em;
+        font-weight: 500;
+        line-height: 0.5em;
+        letter-spacing: 0;
+    }
+    
+    input{
+        border: 1px solid;
+        border-radius: 3px;
+    }
+    
+    .estilotextarea{
+        width:188px;
+        height:30px;
+    }
+    
+    .boton{
+        padding: 5px;
+    }
+}
