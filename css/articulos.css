@@ -225,6 +225,61 @@ p, a{
 }
 
 /* habilidades */
+    /*menu*/
+    .Habilidades_navegation{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .Habilidades_navegation ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .Habilidades_navegation ul li{
+        display: inline-block;
+        padding: 0.5rem 0.5rem;
+    }
+    .Habilidades_navegation ul li a{
+        display: block;
+        padding: 0.5rem 4rem;
+        transition: all 0.2s linear;
+        border-radius: 4px;
+        color: white;
+        background: black;
+        text-decoration: none;
+
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47),
+              2px 2px 2px rgba(0, 0, 0, 0.47),
+              3px 3px 3px rgba(0, 0, 0, 0.47),
+              3px 3px 3px rgba(0, 0, 0, 0.47);
+    }
+    .Habilidades_navegation ul li a:hover {
+        background: #404b68da;
+    }
+
+    @media only screen and (max-width: 970px) {   
+        .Habilidades_navegation ul li a{
+            padding: 0.5rem 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 655px) {  
+        .Habilidades_navegation, .Habilidades_navegation ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        } 
+        .Habilidades_navegation ul li a{
+            padding: 0.5rem 7rem;
+        }
+    }
+    /*fin menu*/
 
 .habilidades__h2, .educacion__h2{
     text-align: center;
@@ -236,19 +291,53 @@ p, a{
     margin: 1rem;
 }
 
-.habilidades__img{
-    height: 8em;
-    margin: 2em;
-}
-
-.educacion__h3{
-    display: none;
-}
-
-.educacion__article{
+.habilidades_article{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.habilidades_caja img{
+    width: 10em;
+    padding: 0 30px;
+}
+
+.habilidades_caja h3, .habilidades_caja p{
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 1.3em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.habilidades_caja h3{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {   
+    .habilidades_caja img{
+        width: 7em;
+    }
+    
+    .habilidades_caja h3, .habilidades_caja p{
+        letter-spacing: 2px;
+        line-height: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 690px) { 
+    .habilidades_article{
+        flex-wrap: wrap;
+        padding: 0;
+    }  
+    .habilidades_caja img{
+        width: 5em;
+    }
+    .habilidades_caja p{
+        padding: 0 2em;
+    }
 }
 
 /*target*/
@@ -261,7 +350,7 @@ p, a{
 
 .contacto{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
@@ -319,32 +408,32 @@ input{
     background-color: #0062cc;
 }
 
-@media only screen and (max-width: 443px) {   
+@media only screen and (max-width: 500px) {    
     form{
-        padding: 0.2em;
-        margin-bottom: 1em;
+        padding: 1em;
     }
     
     fieldset{
-        padding: 0.5em 1.5em;
-        border: 1px solid;
-        font-size: 0.5em;
-        font-weight: 500;
-        line-height: 0.5em;
-        letter-spacing: 0;
-    }
-    
-    input{
-        border: 1px solid;
-        border-radius: 3px;
+        padding: 1em 2em;
+        border: 2px solid;
     }
     
     .estilotextarea{
-        width:188px;
-        height:30px;
+        width:200px;
+        height:100px;
     }
-    
+}
+
+@media only screen and (max-width: 330px) {     
+    .estilotextarea{
+        width:150px;
+        height:70px;
+    }
+
     .boton{
+        margin: 4px;
         padding: 5px;
+        font-weight: 400;
+        font-size: 15px;
     }
 }

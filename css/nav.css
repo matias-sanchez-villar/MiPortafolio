@@ -123,3 +123,7 @@ body {
         border-bottom-left-radius: 2px;
       }
 }
+
+.navegation_second ul li a{
+  text-decoration: none;
+}
