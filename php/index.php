@@ -1,3 +1,4 @@
+<?php include ("form.php"); ?>
 <!DOCTYPE html>
 <html lang="es">
     <meta charset="UTF-8">
@@ -117,6 +118,11 @@
                             $imagen='../imagenes/css-5.svg';
                             $texto='Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios.';
                         break;
+                        default:
+                            $titulo='C++';
+                            $imagen='../imagenes/c++.svg';
+                            $texto='Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios.';
+                        break;
                     }
                 }else{
                     $titulo='C++';
@@ -165,11 +171,10 @@
             <article>
                 <?php
                     if(isset($_GET['enviado'])){
-                        echo "<h3>Mensaje enviado</h3>";
-                        exit;
+                        echo '<h3><i class="fas fa-check" style= "color: #3cc512; font-size: larger;"></i>  Mensaje enviado</h3>';
                     }
                     if(isset($_GET['error'])){
-                        echo "<h3>Mensaje sin enviar, error del servidor</h3>";
+                        echo '<h3><i class="fal fa-ban" style= "color: #f80303; font-size: larger;"></i>  Mensaje sin enviar, error del servidor</h3>';
                     }
                 ?>
             </article>
@@ -198,7 +203,6 @@
             </div>
         </div>
     </footer>
-    <?php include ("form.php"); ?>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/javaS1.js"></script>
 </body>

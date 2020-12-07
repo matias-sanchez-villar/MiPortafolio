@@ -13,9 +13,9 @@
             mysqli_close ($conexion);///cerramos la coneccion
 
             if($resultado){
-                header('Location: index.php?enviado#contacto');
+                header("Location: index.php?enviado=contacto");
             }else {
-                header('Location: index.php?error#contacto');
+                header("Location: index.php?error=contacto");
             }
         }
     }
